@@ -33,14 +33,19 @@ body{
 .menu{
   position:fixed;
   top:0;
-  right:-100%;
-  width:300px;
+  left:0;
+  width:100%;
   height:100%;
   background:#111;
+
   display:flex;
   flex-direction:column;
-  padding:40px;
-  transition:0.4s;
+  justify-content:center;
+  align-items:center;
+
+  transform:translateY(-100%);
+  transition:0.5s ease;
+  z-index:999;
 }
 
 .menu a{
@@ -268,23 +273,23 @@ footer{
     z-index:1001;
   }
 
-  .menu{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    
-    background:linear-gradient(135deg,#000,#0a0a0a,#111);
-    
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+ .menu{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#111;
 
-    transform:translateY(-100%);
-    transition:0.5s;
-  }
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  transform:translateY(-100%);
+  transition:0.5s ease;
+  z-index:999;
+}
 
   .menu.active{
     transform:translateY(0);
@@ -317,7 +322,7 @@ footer{
     position:absolute;
     top:30px;
     right:30px;
-    font-size:30px;
+    z-index:1002;
   }
 }
 
@@ -326,6 +331,7 @@ footer{
   flex-direction:column;
   gap:5px;
   cursor:pointer;
+  z-index:1001;
 }
 
 .menu-btn span{
