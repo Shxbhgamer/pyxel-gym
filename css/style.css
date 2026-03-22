@@ -431,3 +431,104 @@ footer{
     transform:none;
   }
 }
+/* ================= CONTACT SECTION ================= */
+.section{
+  padding:120px 20px;
+  text-align:center;
+}
+
+.section h2{
+  font-size:40px;
+  margin-bottom:40px;
+  color:#1e90ff;
+}
+
+/* ================= CONTACT BOX ================= */
+.section form,
+.contact-box{
+  max-width:500px;
+  margin:auto;
+  padding:30px;
+
+  background:rgba(255,255,255,0.03);
+  border-radius:15px;
+
+  backdrop-filter:blur(10px);
+  position:relative;
+}
+
+/* 🔥 neon glow border */
+.contact-box::before{
+  content:'';
+  position:absolute;
+  top:-2px;
+  left:-2px;
+  right:-2px;
+  bottom:-2px;
+
+  background:linear-gradient(45deg,#00ff88,#1e90ff,#00ff88);
+  z-index:-1;
+  filter:blur(12px);
+  opacity:0.6;
+}
+
+/* ================= INPUTS ================= */
+.section input,
+.section textarea{
+  width:100%;
+  padding:14px;
+  margin:12px 0;
+
+  border:none;
+  border-radius:10px;
+
+  background:#0a0a0a;
+  color:white;
+  outline:none;
+
+  transition:0.3s;
+}
+
+/* focus glow */
+.section input:focus,
+.section textarea:focus{
+  box-shadow:0 0 10px #00ff88, 0 0 20px #1e90ff;
+}
+
+/* textarea size */
+.section textarea{
+  height:120px;
+  resize:none;
+}
+
+/* ================= BUTTON ================= */
+.section .btn{
+  margin-top:15px;
+  width:100%;
+  padding:14px;
+
+  background:linear-gradient(45deg,#00ff88,#1e90ff);
+  border:none;
+  border-radius:30px;
+
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.section .btn:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 15px #00ff88, 0 0 30px #1e90ff;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+
+  .section h2{
+    font-size:30px;
+  }
+
+  .contact-box{
+    padding:20px;
+  }
+}
