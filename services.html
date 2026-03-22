@@ -11,17 +11,28 @@
 <body>
 
 <header class="navbar">
+
   <div class="logo">PYXEL GYM</div>
-  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <div class="menu-btn" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
   <nav class="menu" id="menu">
     <span class="close-btn" onclick="toggleMenu()">✕</span>
+
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="trainers.html">Trainers</a>
     <a href="pricing.html">Pricing</a>
     <a href="contact.html">Contact</a>
   </nav>
+
+  <!-- overlay -->
+  <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
 </header>
 
 <section class="section">
