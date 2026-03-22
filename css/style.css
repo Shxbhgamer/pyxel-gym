@@ -11,6 +11,11 @@ body{
   color:white;
 }
 
+/* Fix content going under navbar */
+body{
+  padding-top:80px; /* adjust based on navbar height */
+}
+
 /* ================= NAVBAR ================= */
 .navbar{
   display:flex;
@@ -170,7 +175,8 @@ body{
   justify-content:center;
   align-items:center;
   text-align:center;
-
+  min-height:100vh;
+  padding-top:80px; /* prevents overlap */
   background:
   linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.9)),
   url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f');
@@ -201,10 +207,10 @@ body{
 
 /* ================= SECTION ================= */
 .section{
-  padding:100px 20px;
-  text-align:center;
+  padding:120px 40px 80px;
+  margin-top:40px;
+  text-align:centre;
 }
-
 /* ================= FOOTER ================= */
 footer{
   text-align:center;
