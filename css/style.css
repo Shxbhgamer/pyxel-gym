@@ -562,3 +562,9 @@ footer{
   }
 
 }
+/* Hide close button on laptop */
+@media(min-width:769px){
+  .close-btn{
+    display:none;
+  }
+}
