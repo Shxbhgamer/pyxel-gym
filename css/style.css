@@ -532,3 +532,33 @@ footer{
     padding:20px;
   }
 }
+/* ================= DESKTOP CONTACT FIX ONLY ================= */
+@media(min-width:769px){
+
+  .section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+  }
+
+  .contact-box{
+    width:500px;
+    padding:40px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.04);
+    backdrop-filter:blur(12px);
+
+    /* center look */
+    box-shadow:0 0 30px rgba(0,255,136,0.2),
+               0 0 60px rgba(30,144,255,0.2);
+  }
+
+  .section h2{
+    position:absolute;
+    top:120px;
+    text-align:center;
+    width:100%;
+  }
+
+}
