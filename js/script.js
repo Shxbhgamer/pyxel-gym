@@ -5,6 +5,7 @@ const menuBtn = document.querySelector(".menu-btn");
 function toggleMenu(){
   menu.classList.toggle("active");
   menuBtn.classList.toggle("open");
+  document.body.classList.toggle("no-scroll");
 }
 
 // ================= AUTO CLOSE MENU =================
@@ -59,13 +60,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-function toggleMenu(){
-  menu.classList.toggle("active");
-  menuBtn.classList.toggle("open");
-
-  // prevent background scroll
-  document.body.classList.toggle("no-scroll");
-}
 // ================= BUTTON RIPPLE EFFECT =================
 document.querySelectorAll(".btn").forEach(button => {
   button.addEventListener("click", function(e){
